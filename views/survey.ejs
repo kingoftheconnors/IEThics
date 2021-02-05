@@ -1,0 +1,155 @@
+<%- include('includes/header.ejs') %>
+
+<!-- multistep form -->
+<div class="row justify-content-around no-margin">
+	<div class="col-6-md col-10">
+		<form id="msform">
+			<div class="row justify-content-around">
+				<!-- progressbar -->
+				<ul id="progressbar">
+					<li class="active col"></li>
+					<li class="col"></li>
+					<li class="col"></li>
+					<li class="col"></li>
+					<li class="col"></li>
+					<li class="col"></li>
+					<li class="col"></li>
+					<li class="col"></li>
+					<li class="col"></li>
+					<li class="col"></li>
+					<li class="col"></li>
+				</ul>
+			</div>
+			<!-- fieldsets -->
+			<div class="row justify-content-around">
+				<fieldset class="col">
+					<h2 class="fs-title">Question 1</h2>
+					<p class="fs-subtitle">
+						The last customer meeting for your project was a disaster. Communication has
+						been limited for the last month and the customer is expecting a full report
+						from today’s meeting. As you leave your office for the meeting, you overhear
+						the administrative assistant saying,
+						<br>
+						<blockquote>
+							“If Joe calls in, please see that he calls home. His spouse says there is a
+							mini-crisis.”
+						</blockquote>
+						<br>
+						You are to meet with Joe at the customer’s office, and the two of you are to lead
+						the meeting. Joe’s participation is critical. Joe is quite nervous and often gives
+						a bad impression if distracted. What do you do?
+					</p>
+					
+					<div class="row py-1">
+						<div class="col">
+							<input type="radio" name="HCvTttC" value="HCvTttC1" id="HCvTttC1">
+							<label for="HCvTttC1">Relay the information to Joe before the meeting</label>
+						</div>
+					</div>
+					<div class="row py-1">
+						<div class="col">
+							<input type="radio" name="HCvTttC" value="HCvTttC2" id="HCvTttC2">
+							<label for="HCvTttC2">Lead the client meeting with Joe before telling him/label>
+						</div>
+					</div>
+					<button type="button" class="btn btn-primary next mt-4" name="next" value="Next">Next</button>
+				</fieldset>
+
+				<fieldset></fieldset>
+
+				<fieldset class="col">
+					<h2 class="fs-title">Question 2</h2>
+					<p class="fs-subtitle">
+						You and your friend work at two competing companies. Two days before the
+						release deadline for a particularly time-consuming issue, you and your
+						friend are talking over lunch. Suddenly, your phone rings. A personal
+						emergency has come up. You absolutely won’t be able to fix the issue before
+						the deadline. Your friend offers to finish the code for you. When you two
+						first met, you helped him a lot with his code and he wants to repay the favor.
+						You were required to sign a Non-Disclosure-Agreement for this job, and you know
+						your company isn’t willing to hire consultants at this time (especially ones
+						from their top competitor). What do you do?
+					</p>
+					
+					<div class="row py-1">
+						<div class="col">
+							<input type="radio" name="QAvRoIP" value="QAvRoIP1" id="QAvRoIP1">
+							<label for="QAvRoIP1">Finish the project in time with your friend’s help</label>
+						</div>
+					</div>
+					<div class="row py-1">
+						<div class="col">
+							<input type="radio" name="QAvRoIP" value="QAvRoIP2" id="QAvRoIP2">
+							<label for="QAvRoIP2">Honor your contract and politely refuse</label>
+						</div>
+					</div>
+					<button type="button" class="btn btn-primary previous mt-4" name="previous">Previous</button>
+					<button type="button" class="btn btn-primary next mt-4" name="next">Next</button>
+					</div>
+				</fieldset>
+
+				<fieldset></fieldset>
+				<fieldset></fieldset>
+
+				<fieldset class="col">
+					<h2 class="fs-title">Question 5</h2>
+					<p class="fs-subtitle">
+						You and your coworkers have been working for the last year on an update to
+						an already existing accessibility app to make texting on smartphones easier.
+						The software is used in a wide variety of applications, and you believe there
+						may be issues that haven’t been found. The release deadline is approaching, and
+						one coworker suggests configuring the initial release to send an error report
+						of everything being done by the user whenever a system breakdown occurs. This
+						data collection would keep track of all recent events, running apps and current
+						texts. Data collection for the sake of improving the software is
+						allowed in the company’s privacy policy. What do you do?
+					</p>
+					
+					<div class="row py-1">
+						<div class="col">
+							<input type="radio" name="QAvPr" value="QAvPr1" id="QAvPr1">
+							<label for="QAvPr1">Begin development of the data collection software</label>
+						</div>
+					</div>
+					<div class="row py-1">
+						<div class="col">
+							<input type="radio" name="QAvPr" value="QAvPr2" id="QAvPr2">
+							<label for="QAvPr2">Request to push back the deadline and build a small group of users to test the
+								software with</label>
+						</div>
+					</div>
+					<div class="row py-1">
+						<div class="col">
+							<input type="radio" name="QAvPr" value="QAvPr3" id="QAvPr3">
+							<label for="QAvPr3">Release the software without collecting data and wait for users to report errors</label>
+						</div>
+					</div>
+					<div class="row py-1">
+						<div class="col">
+							<input type="radio" name="QAvPr" value="QAvPr4" id="QAvPr4">
+							<label for="QAvPr4">Develop the data collection software to get information on customers for future use
+								and begin work on the next update without checking for errors in the last update</label>
+						</div>
+					</div>
+					<button type="button" class="btn btn-primary previous mt-4" name="previous">Previous</button>
+					<button type="button" class="btn btn-primary next mt-4" name="next">Next</button>
+					</div>
+				</fieldset>
+
+				<fieldset></fieldset>
+				<fieldset></fieldset>
+				<fieldset></fieldset>
+				<fieldset></fieldset>
+			</div>
+		</form>
+	</div>
+</div>
+
+<%- include('includes/footer.ejs') %>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<!-- jQuery easing plugin -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<!-- User-defined functions -->
+<script src="/javascripts/surveyMultipart.js"></script>

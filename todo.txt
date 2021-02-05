@@ -1,0 +1,23 @@
+Update survey questions
+Make full survey w/ all QUESTIONS
+Create identify-yourself sections (every question should have a prefer-not-to-answer option)
+   Age
+   Years of Experience
+   Geography (Create map for choosing place of residence(?) [choose how geography is categorically divided])
+   Field (Ops, Security, Development, Teacher/Researcher, Management, Other)
+ Student Labels:
+   Are you a student?
+   What program is your major rolled into? (liberal arts, math, engineering, art, etc)
+   Does your school offer a comp-sci-specific course on ethics?
+   What type of school? (Liberal arts, etc)
+
+Clean up survey
+Make front page have some kind of image background (still purple, but with some pattern. Bubbles? Or stuff? Image doesn't scroll with page. Stays CONSTANT)
+Create POST submission endpoint adding to database
+Make Survey-completion page complete with results
+Create statistics front page
+Design statistics backend
+Make statistics page work with ajax
+Test with users
+Post on heroku with DNS to namespace
+Give to professors

@@ -1,0 +1,98 @@
+<%- include('includes/header.ejs') %>
+
+    <div class="jumbotron jumbotron-fluid bg-primary text-light">
+        <div class="container text-center">
+            <h1 class="py-5 display-2">IEThics</h1>
+            <p>A Values Survey by Computing Professionals</p>
+            <div class="row justify-content-around pt-3">
+                <div class="col-md-6 col-9 text-center">
+                    <a href="/survey" class="btn btn-primary btn-color--pink form-control" role="button">Take the Survey!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container text-dark">
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-5 col-sm-6 col-8 text-center text-sm-left">
+                <h1>What is IEThics?</h1>
+                <p>IEThics is a research initiative to learn more about how people in computing
+                    make decisions about <b>Values</b>. Unlike most things in computing,
+                    ethics can't be measured in binary, so this research measures by dividing values
+                    such as Privacy and Helping Coworkers. It tells how responsible programmers feel
+                    to each when faced in situations where they can't have both.</p>
+            </div>
+            <div class="col-lg-4 col-md-5 col-sm-6 col-8 align-self-center">
+                <ul class="icon">
+                    <li class="chart my-1"><b>IEThics accumulates and curates an ongoing dataset of user responses to discover trends in programmer values</b></li>
+                    <li class="person my-1"><b>IEthics gives respondents a comprehensive look into their values based on their answers</b></li>
+                    <li class="brain my-1"><b>IEThics provides a challenging suite of ethical dillemas to make respondents think about the decisions they make every day</b></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bg-primary text-light p-5 m-5 rounded shadow-lg">
+            <div class="row justify-content-around">
+                <div class="text-center">
+                    <h1>What's so great about Values?</h1>
+                </div>
+            </div>
+            <div class="row justify-content-around text-center">
+                <div class="col-lg-3 col-md-4 col-12">
+                    <div class="row p-4">
+                        <div class="col">
+                            <i class="icon--large fa fa-crosshairs"></i>
+                        </div>
+                    </div>
+                    Values categorize ethical decision-making by easily understood and actionable concepts
+                </div>
+                <div class="col-lg-3 col-md-4 col-12">
+                    <div class="row p-4">
+                        <div class="col">
+                            <i class="icon--large fa fa-balance-scale"></i>
+                        </div>
+                    </div>
+                    Forcing users to choose against different values creates a balanced survey and removes the "obvious right answer" problem involved with ethics research
+                </div>
+                <div class="col-lg-3 col-md-4 col-12">
+                    <div class="row p-4">
+                        <div class="col">
+                            <i class="icon--large fa fa-globe"></i>
+                        </div>
+                    </div>
+                    Values are objectively-defined and universally accepted, which help keep the survey results unbiased
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row justify-content-around">
+            <div class="col-lg-4 col-6 text-center">
+                <h3>Can I see the results?</h3>
+                <p>Absolutely! This site calculates and releases statistical conclusions based
+                    on all current responses <b>(all data is anonymized upon submission)</b>. You can
+                    see the current conclusions and data tables by visiting the <b>Statics Page</b>
+                    in the navbar.
+                </p>
+            </div>
+            <div class="col-lg-4 col-6 text-center">
+                <h3>We need your help!</h3>
+                <p>We want to get as broad and as inclusive a dataset as possible, and we can't
+                    do that without your input!<br><br>
+                    Give us 20 minutes for the sake of research and
+                    learn more about yourself in the process!
+                </p>
+            </div>
+        </div>
+
+        <!-- Submit!-->
+        <div class="row justify-content-around py-3">
+            <div class="col-md-3 col-6 text-center">
+                <a href="/data" class="btn btn-primary form-control" role="button">Explore Results</a>
+            </div>
+            <div class="col-md-3 col-6 text-center">
+                <a href="/survey" class="btn btn-primary form-control" role="button">Take the Survey!</a>
+            </div>
+        </div>
+    </div>
+
+<%- include('includes/footer.ejs') %>
