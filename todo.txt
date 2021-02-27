@@ -1,5 +1,3 @@
-Update survey questions
-Make full survey w/ all QUESTIONS
 Create identify-yourself sections (every question should have a prefer-not-to-answer option)
    Age
    Years of Experience
@@ -11,8 +9,9 @@ Create identify-yourself sections (every question should have a prefer-not-to-an
    Does your school offer a comp-sci-specific course on ethics?
    What type of school? (Liberal arts, etc)
 
-Clean up survey
-Make front page have some kind of image background (still purple, but with some pattern. Bubbles? Or stuff? Image doesn't scroll with page. Stays CONSTANT)
+Clean up survey (to be pretty on all screen sizes)
+Make front page have some kind of image background (still purple, but with some pattern. Bubbles? Or stuff? Image won't scroll with page)
+Database
 Create POST submission endpoint adding to database
 Make Survey-completion page complete with results
 Create statistics front page
