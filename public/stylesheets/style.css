@@ -55,29 +55,21 @@ footer {
 }
 /*progressbar*/
 #progressbar {
-	margin-bottom: 30px;
 	overflow: hidden;
 	/*CSS counters to number the steps*/
-	counter-reset: step;
 	text-align: center;
 }
 #progressbar li {
-	list-style-type: none;
-	color: white;
-	width: 8%;
 	float: left;
 	position: relative;
-}
-#progressbar li:before {
-	content: counter(step);
-	counter-increment: step;
-	width: 20px;
 	line-height: 20px;
 	display: block;
-	font-size: 10px;
-	color: #333;
+	font-size: 12px;
 	background: white;
 	border-radius: 3px;
+	margin-right: 10px;
+	width: 5%;
+	min-width: 24px;
 }
 /*progressbar connectors*/
 #progressbar li:after {
@@ -87,7 +79,7 @@ footer {
 	background: white;
 	position: absolute;
 	left: -50%;
-	top: 9px;
+	top: 12px;
 	z-index: -1; /*put it behind the numbers*/
 }
 #progressbar li:first-child:after {
@@ -96,7 +88,7 @@ footer {
 }
 /*marking active/completed steps green*/
 /*The number of the step and the connector before it = green*/
-#progressbar li.active:before,  #progressbar li.active:after{
+#progressbar li.active,  #progressbar li.active:after{
 	background: #5e0aad;
 	color: white;
 }
