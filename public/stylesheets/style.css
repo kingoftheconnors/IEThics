@@ -20,6 +20,18 @@ footer {
 	height: 64px;
 }
 
+.jumbotron {
+	background: url('/images/sparkles.png') fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+.jumbotron-header--width {
+	width: 70%;
+}
+
 /*form styles*/
 #msform {
 	margin: 50px 0;

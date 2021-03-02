@@ -2,7 +2,7 @@ Create identify-yourself sections (every question should have a prefer-not-to-an
    Geography (Create map for choosing place of residence(?) [choose how geography is categorically divided])
 
 Clean up survey (to be pretty on all screen sizes)
-Make front page have some kind of image background (still purple, but with some pattern. Bubbles? Or stuff? Image won't scroll with page)
+Make survey not able to move forward with un-answered questions
 Database
 Create POST submission endpoint adding to database
 Make Survey-completion page complete with results
