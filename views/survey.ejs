@@ -57,7 +57,7 @@
 						</div>
 						<div class="row py-1">
 							<div class="col">
-								<input type="radio" name="age" value="I'd prefer not to answer" id="age5">
+								<input type="radio" name="age" value="NULL" id="age5">
 								<label for="age5">I'd prefer not to answer</label>
 							</div>
 						</div>
@@ -95,7 +95,7 @@
 						</div>
 						<div class="row py-1">
 							<div class="col">
-								<input type="radio" name="exp" value="I'd prefer not to answer" id="exp5">
+								<input type="radio" name="exp" value="NULL" id="exp5">
 								<label for="exp5">I'd prefer not to answer</label>
 							</div>
 						</div>
@@ -158,7 +158,7 @@
 						</div>
 						<div class="row py-1">
 							<div class="col">
-								<input type="radio" name="field" value="I'd prefer not to answer" id="field5">
+								<input type="radio" name="field" value="NULL" id="field5">
 								<label for="field5">I'd prefer not to answer</label>
 							</div>
 						</div>
@@ -168,7 +168,7 @@
 
 				<fieldset class="col">
 					<h2 class="fs-title">About You</h2>
-					<!-- Age -->
+					<!-- Student -->
 					<div class="pl-3"> <!-- Tab over -->
 						<h3 class="fs-subtitle">
 							Are you a student?
@@ -176,19 +176,86 @@
 						
 						<div class="row py-1">
 							<div class="col">
-								<input type="radio" name="student" value="yes" id="age1">
-								<label for="age1">Yes</label>
+								<input type="radio" name="student" value="yes" id="student1">
+								<label for="student1">Yes</label>
 							</div>
 						</div>
 						<div class="row py-1">
 							<div class="col">
-								<input type="radio" name="student" value="no" id="age2">
-								<label for="age2">No</label>
+								<input type="radio" name="student" value="no" id="student2" checked="checked">
+								<label for="student2">No</label>
 							</div>
 						</div>
 
 						<hr>
 						
+						<div id="studentQuestions" disabled="true">
+							<!-- Program classification -->
+							<h3 class="fs-subtitle">
+								What program is your major a part of?
+							</h3>
+							
+							<div class="row py-1">
+								<div class="col">
+									<input type="radio" name="program" value="LibArts" id="program1" disabled>
+									<label for="program1">Liberal Arts</label>
+								</div>
+							</div>
+							<div class="row py-1">
+								<div class="col">
+									<input type="radio" name="program" value="Math" id="program2" disabled>
+									<label for="program2">Math</label>
+								</div>
+							</div>
+							<div class="row py-1">
+								<div class="col">
+									<input type="radio" name="program" value="Engineering" id="program3" disabled>
+									<label for="program3">Engineering</label>
+								</div>
+							</div>
+							<div class="row py-1">
+								<div class="col">
+									<input type="radio" name="program" value="Art" id="program4" disabled>
+									<label for="program4">Art</label>
+								</div>
+							</div>
+							<div class="row py-1">
+								<div class="col">
+									<input type="radio" name="program" value="Other" id="program5" disabled>
+									<label for="program5">Other</label>
+								</div>
+							</div>
+							<div class="row py-1">
+								<div class="col">
+									<input type="radio" name="program" value="NULL" id="program6" disabled>
+									<label for="program6">I'd prefer not to answer</label>
+								</div>
+							</div>
+	
+							<h3 class="fs-subtitle pt-5">
+								Does your school offer a comp-sci-specific course on ethics?
+							</h3>
+	
+							<div class="row py-1">
+								<div class="col">
+									<input type="radio" name="ethicsCourse" value="yes" id="ethicsCourse1" disabled>
+									<label for="ethicsCourse1">Yes</label>
+								</div>
+							</div>
+							<div class="row py-1">
+								<div class="col">
+									<input type="radio" name="ethicsCourse" value="yes" id="ethicsCourse2" disabled>
+									<label for="ethicsCourse2">Yes, but I haven't taken it yet</label>
+								</div>
+							</div>
+							<div class="row py-1">
+								<div class="col">
+									<input type="radio" name="ethicsCourse" value="no" id="ethicsCourse3" disabled>
+									<label for="ethicsCourse3">No</label>
+								</div>
+							</div>
+						</div>
+
 					</div> <!-- End tab over -->
 					<button type="button" class="btn btn-primary previous mt-4" name="previous">Previous</button>
 					<button type="button" class="btn btn-primary next mt-4" name="next" value="Next">Next</button>

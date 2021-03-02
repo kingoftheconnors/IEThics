@@ -1,13 +1,5 @@
 Create identify-yourself sections (every question should have a prefer-not-to-answer option)
-   Age
-   Years of Experience
    Geography (Create map for choosing place of residence(?) [choose how geography is categorically divided])
-   Field (Ops, Security, Development, Teacher/Researcher, Management, Other)
- Student Labels:
-   Are you a student?
-   What program is your major rolled into? (liberal arts, math, engineering, art, etc)
-   Does your school offer a comp-sci-specific course on ethics?
-   What type of school? (Liberal arts, etc)
 
 Clean up survey (to be pretty on all screen sizes)
 Make front page have some kind of image background (still purple, but with some pattern. Bubbles? Or stuff? Image won't scroll with page)

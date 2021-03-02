@@ -33,3 +33,12 @@ $(".previous").on("click", function(){
 $(".submit").click(function(){
 	return false;
 })
+
+$("input[name='student']").on("change", function(){
+    // Do something interesting here
+	if(this.value == "yes") {
+		$("#studentQuestions *").prop("disabled", false)
+	} else {
+		$("#studentQuestions *").prop("disabled", true)
+	}
+});

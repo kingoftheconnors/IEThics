@@ -18,7 +18,6 @@ body {
 }
 footer {
 	height: 64px;
-
 }
 
 /*form styles*/
@@ -131,6 +130,10 @@ ul.icon li:before
 .icon--large
 {
 	font-size: 72px !important;
+}
+
+input:disabled+label {
+	color: darkgrey;
 }
 
 /* Content types can be seen here: https://astronautweb.co/snippet/font-awesome/ */
