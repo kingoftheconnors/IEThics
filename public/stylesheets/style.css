@@ -21,7 +21,7 @@ footer {
 }
 
 .jumbotron {
-	background: url('/images/sparkles.png') fixed;
+	/* background: url('/images/sparkles.png') fixed; */
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -146,6 +146,29 @@ ul.icon li:before
 
 input:disabled+label {
 	color: darkgrey;
+}
+
+.usmap-west--hover:hover,
+.usmap-midwest--hover:hover,
+.usmap-northeast--hover:hover,
+.usmap-south--hover:hover {
+	-webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+	filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+}
+.usmap-west--hover:hover path,
+.usmap-midwest--hover:hover path,
+.usmap-northeast--hover:hover path,
+.usmap-south--hover:hover path {
+	stroke:rgba(0, 0, 0, 1);
+	stroke-width: 2px;
+}
+
+.usmap-select:hover {
+	cursor:pointer;
+}
+
+.usmap-select[selected] path {
+	fill: #400775 !important;
 }
 
 /* Content types can be seen here: https://astronautweb.co/snippet/font-awesome/ */

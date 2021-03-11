@@ -30,15 +30,20 @@ $(".previous").on("click", function(){
 	current_fs.hide();
 });
 
-$(".submit").click(function(){
-	return false;
-})
-
 $("input[name='student']").on("change", function(){
-    // Do something interesting here
 	if(this.value == "yes") {
 		$("#studentQuestions *").prop("disabled", false)
 	} else {
 		$("#studentQuestions *").prop("disabled", true)
 	}
 });
+
+$(".usmap-select").on("click", function() {
+	$(".usmap-select").removeAttr('selected')
+	$(this).attr('selected', 'selected')
+	// Aria label
+	$(".usmap-select").attr('aria-selected', 'false') // Set all selectable elements to false
+	$(this).attr('aria-selected', 'true') // Set newly selected element to true
+	// Set input value
+	$("#geography").val($(this).data('region'))
+})
