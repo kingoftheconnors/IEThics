@@ -30,10 +30,11 @@
 						<h3 class="fs-subtitle">
 							What's your age?
 						</h3>
+						<label for="age" class="error text-danger"></label>	
 						
 						<div class="row py-1">
 							<div class="col">
-								<input type="radio" name="age" value="18-30" id="age1">
+								<input type="radio" name="age" value="18-30" id="age1" required data-msg="Please select an age range">
 								<label for="age1">18-30</label>
 							</div>
 						</div>
@@ -68,10 +69,11 @@
 						<h3 class="fs-subtitle">
 							How many years have you been a programmer for?
 						</h3>
+						<label for="exp" class="error text-danger"></label>	
 						
 						<div class="row py-1">
 							<div class="col">
-								<input type="radio" name="exp" value="0-5" id="exp1">
+								<input type="radio" name="exp" value="0-5" id="exp1" required data-msg="Please select an experience range">
 								<label for="exp1">Less than 5</label>
 							</div>
 						</div>
@@ -106,9 +108,10 @@
 						<h3 class="fs-subtitle" id="geographyQuestion">
 							Where in the US do you live?
 						</h3>
+						<label for="geography" class="error text-danger"></label>						
 
 						<svg role="listbox" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 440" xml:space="preserve" aria-labelledby="geographyQuestion">
-							<g role="option" class="usmap-select usmap-west--hover" data-region="west" transform="translate(-3 -2)" aria-selected="false" aria-label="USA West Coast">
+							<g role="option" class="usmap-select usmap-west--hover" data-region="West" transform="translate(-3 -2)" aria-selected="false" aria-label="USA West Coast">
 								<path id="usAK" fill="#5e0aad" stroke="#FFFFFF" vector-effect="non-scaling-stroke" d="M 135 400 c -1.677 1.711 -1.501 -1.766 -3.618 -0.825 c -1.417 0.628 -0.273 -2.148 -5.01 -4.239 c 0.179 -1.593 -0.733 -2.156 -1.037 -1.516 c -0.72 -1.573 3.366 -1.975 -1.295 -3.838 c 1.732 -0.725 -3.809 -5.006 -3.949 -4.104 c -1.354 -0.022 -1.597 -2.984 -1.07 -3.102 c -1.165 0.023 -0.899 -2.523 -2.451 -1.876 c -1.069 -0.561 -1.224 3.677 -6.321 1.558 c -2.955 -1.228 -12.021 4.252 -12.54 0.416 c -0.29 -2.136 -2.881 1.507 -3.491 0.177 c -0.61 -1.33 -1.967 -0.33 -1.57 -1.662 c 0.396 -1.332 -1.956 0.146 -2.666 -0.898 c -2.012 -1.759 -1.901 0.612 -3.945 1.245 c -2.438 0.756 2.334 2.848 0.502 3.854 c -2.725 1.5 2.18 2.162 -0.515 3.294 c -1.221 0.512 -2.263 0.734 -3.223 0.33 c -0.962 -0.403 -2.007 0.953 -1.816 1.838 c 0.507 2.354 -3.307 2.291 -4.364 4.113 c -0.394 0.681 -2.2 1.155 -2.063 0.096 c 0.138 -1.063 3.06 -3.134 2.362 -3.597 s -3.182 -0.253 -2.116 -2.552 c 1.064 -2.298 -0.202 -4.654 1.117 -4.893 c 1.319 -0.239 1.978 -1.682 3.629 -1.187 s 1.837 -0.778 0.662 -1.284 c -1.174 -0.507 0.701 -2.027 -0.258 -2.271 c -0.958 -0.245 -1.345 1.562 -2.991 1.331 c -1.646 -0.23 -5.405 4.958 -5.429 6.358 c -0.058 3.267 -3.148 0.576 -1.817 4.38 c 0.79 2.257 -6.596 4.564 -3.093 6.681 c 1.095 0.663 4.505 0.723 3.102 1.525 c -7.222 4.136 -0.02 4.201 -4.169 5.856 c -0.739 0.294 -7.307 5.18 -6.706 6.067 s -1.574 3.313 -2.477 3.173 c -0.903 -0.14 -5.632 4.193 -4.784 4.282 c 0.849 0.089 -0.078 1.325 -1.551 1.831 c -1.472 0.507 -4.206 1.463 -4.398 2.421 c -0.192 0.956 -4.533 3.585 -4.876 2.321 c 0.923 1.146 2.595 0.053 2.147 -1.155 c -0.449 -1.209 5.022 -5.558 5.824 -5.202 c 0.801 0.354 0.735 -2.874 1.894 -3.216 c 1.157 -0.342 2.915 -2.442 2.363 -3.543 c -0.552 -1.101 -0.168 -5.608 1.095 -6.004 c 1.262 -0.397 1.535 -2.573 1.001 -2.827 c -0.535 -0.254 -3.073 2.499 -4.036 1.988 c -0.963 -0.51 0.074 -1.537 -0.939 -1.889 c -1.013 -0.349 -1.239 1.562 -1.226 2.197 c 0.014 0.636 -2.33 2.572 -2.375 0.365 c -0.045 -2.205 -1.971 0.306 -3.008 -2.108 c -1.038 -2.414 -4.797 3.646 -5.456 2.493 c -0.659 -1.151 -2.191 -3.556 -0.797 -5.331 c 1.393 -1.775 -1.571 -6.903 -0.58 -7.666 c 0.99 -0.761 -0.412 -2.002 -1.031 -1.195 s -0.46 3.398 -1.086 3.888 c -0.625 0.488 -4.734 1.526 -4.908 0.789 c -0.174 -0.739 -3.797 -4.477 -3.185 -5.602 c 0.612 -1.124 1.896 -0.462 2.011 -0.04 c 0.115 0.42 2.788 1.688 2.925 0.627 c 0.137 -1.061 -0.735 -2.262 -2.698 -2.433 c -1.962 -0.172 -2.629 -0.281 -2.399 -2.281 c 0.23 -1.999 -2.672 1.096 -2.022 -1.651 c 0.173 -0.734 1.398 -6.7 2.087 -6.663 c 0.689 0.04 3.799 -0.623 3.027 -2.133 c -0.773 -1.513 1.54 -4.948 2.155 -3.372 c 0.614 1.574 4.647 -0.571 4.786 -1.58 c 0.138 -1.01 4.667 0.327 4.296 -2.26 c -0.371 -2.586 1.676 -3.476 -0.038 -4.446 c -1.714 -0.972 1.19 -3.942 -0.708 -3.585 c -1.899 0.355 -3.525 3.725 -4.867 2.799 c -1.343 -0.925 -6.278 1.135 -8.105 -0.205 c -1.828 -1.34 -3.628 -1.515 -3.19 -3.323 c 0.438 -1.81 1.754 -2.153 0.362 -2.92 c -1.393 -0.765 -4.287 -4.042 -1.601 -3.938 c 2.687 0.105 2.911 -1.912 3.93 -1.298 c 1.019 0.615 2.742 -3.127 3.603 -2.456 s 2.903 -0.428 2.345 0.746 c -0.558 1.176 1.535 2.563 2.489 2.597 s 2.66 -1.96 3.953 -0.875 c 1.293 1.086 3.905 -0.661 2.875 -1.807 c -1.029 -1.143 -2.647 0.002 -3.623 -1.143 c -0.976 -1.144 0.208 -2.758 -1.076 -3.366 c -1.282 -0.609 -5.728 0.381 -6.904 -6.214 c -0.291 -1.626 -3.91 -5.421 -3.334 -5.119 c 1.239 -3.326 7.67 0.495 8.448 -6.368 c 0.256 -2.265 5.833 -8.239 7.023 -6.073 c 0.46 0.836 2.582 -0.636 1.829 -1.203 c -0.752 -0.566 0.651 -1.867 1.452 -1.511 c 0.801 0.354 3.465 -4.042 4.538 -3.376 c 1.073 0.665 0.789 2.314 1.643 2.668 c 0.855 0.352 4.516 0.754 5.085 0.105 c 0.569 -0.646 2.792 -2.402 3.712 0.296 c 0.92 2.698 6.897 -1.905 9.909 0.379 c 3.012 2.288 3.963 -1.227 6.518 0.292 c 2.556 1.518 9.498 -1.572 12.341 0.224 c 0 0 17.482 60.955 19.925 63.024 c 2.443 2.068 5.153 -3.495 6.962 -1.308 z c -1.808 -2.081 -2.008 -0.739 -4.185 -0.973"/>
 								<path id="usAZ" fill="#5e0aad" stroke="#FFFFFF" vector-effect="non-scaling-stroke" d="M129.051,227.534c-1.049,6.312-2.391,10.784-1.882,11.149c1.504,1.081-0.723,6.933-3.524,2.79c-2.803-4.144-7.11,2.615-5.355,3.69c1.757,1.075-0.745,6.067,0.033,7.903c0.779,1.838-1.973,0.163-1.614,5.592c2.252,1.436,0.158,7.778,2.656,9.085c2.497,1.308,0.702,4.186-2.845,5.864c-3.547,1.676-2.524,9.436-5.024,9.858c-2.5,0.422-1.456,5.464,1.031,6.278c2.487,0.813-0.289,3.958-2.667,4.459c-0.558,0.916-1.528,1.843-1.911,3.167c1.829,0.869,40.722,22.471,47.219,26.125c3.4,0.577,16.792,1.856,26.84,2.777c0.946-5.941,5.273-47.321,9.785-90.463C170.793,233.669,149.597,230.951,129.051,227.534z"/>
 								<path id="usCA" fill="#5e0aad" stroke="#FFFFFF" vector-effect="non-scaling-stroke" d="M112.527,289.745c-2.486-0.814-3.531-5.856-1.031-6.278c2.5-0.423,1.477-8.183,5.024-9.858c3.547-1.679,5.342-4.557,2.845-5.864c-2.498-1.307-0.404-7.649-2.656-9.085l-54.597-76.941l10.659-46.333c-17.741-3.779-34.675-7.863-48.079-11.94c-0.925,3.065,0.899,11.757-2.422,14.459c-3.322,2.701-1.712,5.596-4.879,7.016c-4.813,2.158,4.844,15.464,1.943,18.568c-2.901,3.104,1.253,4.916-0.516,7.009c-1.769,2.093,0.546,6.576,2.217,7.777c1.672,1.201,2.583,5.464,3.594,6.596c1.01,1.131,0.942,1.792-0.612,2.318c-1.554,0.526,1.739,4.493,3.154,5.534c1.415,1.041,1.379-1.263,1.596-2.75c0.217-1.485,3.781,5.688,0.254,4.359c-0.662-0.25-0.805,0.922-1.554,1.679c-0.749,0.756,0.766,4.101,0.224,5.759c-0.542,1.658,1.608,5.519,2.761,6.201c7.001,4.14-3.994,6.012,1.607,14.212c1.031,1.51,1.47,7.464,3.615,7.666c2.146,0.201,0.667,4.516,2.985,5.044c2.316,0.527-0.719,5.121,1.26,5.244c1.979,0.121,1.584,4.99,0.051,6.504s-0.07,3.917,1.015,5.332c2.115,2.756,13.866,1.611,14.302,6.871c0.194,2.334,3.303,4.461,6.185,4.483c2.881,0.022,3.232,3.747,3.559,4.95c0.712,2.621,5.039,0.805,7.864,6.097c2.826,5.293,4.263,11.193,3.704,12.028s1.596,5.565,2.337,5.634c0.743,0.066,28.538,2.381,30.922,2.168C112.238,293.703,115.014,290.559,112.527,289.745z"/>
@@ -124,7 +127,7 @@
 								<path id="usWY" fill="#5e0aad" stroke="#FFFFFF" vector-effect="non-scaling-stroke" d="M198.546,171.736c18.165,1.587,42.414,3.391,60.364,4.489c0.208-4.454,0.796-16.357,1.52-31.176c0.479-9.799,1.017-20.874,1.542-31.914c-10.848-0.386-66.665-5.277-79.229-7.656l-1.029,7.954l-5.122,39.569l-2.099,16.211C177.931,169.808,187.008,170.729,198.546,171.736z"/>
 							</g>
 
-							<g role="option" class="usmap-select usmap-midwest--hover" data-region="midwest" transform="translate(2 -5)" aria-selected="false" aria-label="USA Midwest">
+							<g role="option" class="usmap-select usmap-midwest--hover" data-region="Midwest" transform="translate(2 -5)" aria-selected="false" aria-label="USA Midwest">
 								<path id="usIA" fill="#5e0aad" stroke="#FFFFFF" vector-effect="non-scaling-stroke" d="M346.181,139.728c1.804,1.445-2.152,4.861,0.696,6.532c2.851,1.67-1.142,3.358,0.151,7.407c1.294,4.049-1.041,4.591,3.197,6.48c4.237,1.89-0.488,6.433,3.025,9.078c3.511,2.645,1.409,8.493,4.008,14.863c7.796,0.706,45.88-3.161,47.604-3.443s3.647,3.137,4.78,4.225c0.357-0.625,4.132-3.295,3.075-6.732c-1.06-3.437,2.183-1.896,2.392-3.754c0.208-1.857-2.66-3.281-2.447-4.89c0.215-1.61,3.884-3.415,7.445-4.352c3.563-0.938,2.016-4.117,3.206-6.364c1.189-2.248-3.503-2.152-3.694-5.482c-0.19-3.332-2.751-1.673-3.039-3.644c-0.287-1.97-2.269-2.3-4.893-3.729c-2.623-1.429-2.352-6.251-1.638-7.624c0.713-1.374-1.408-2.441-2.427-3.903c-11.951,1.479-51.821,2.541-59.723,2.702C346.682,137.864,344.376,138.282,346.181,139.728z"/>
 								<path id="usIL" fill="#5e0aad" stroke="#FFFFFF" vector-effect="non-scaling-stroke" d="M419.619,153.295c0.191,3.33,4.884,3.234,3.694,5.482c-1.19,2.248,0.356,5.427-3.206,6.364c-3.562,0.937-7.23,2.741-7.445,4.352c-0.213,1.609,2.655,3.033,2.447,4.89c-0.209,1.857-3.451,0.317-2.392,3.754c1.057,3.437-2.718,6.107-3.075,6.732c-0.358,0.625-1.849,12.265,7.001,14.431c2.271,0.556,3.643,1.42,4.017,4.981c0.768,7.271,10.438,0.949,6.561,6.782c-5.991,9.014,6.444,13.084,7.298,12.572c1.697-1.018,3.382,2.276,3.03,3.273c-0.351,0.994,2.317,4.646,0.976,5.412c-1.343,0.77,3.171,4.013,4.026,3.625c0.856-0.389,0.398-4.702,4.384-3.055c3.985,1.648,4.244,2.137,4.05-1.317c-0.195-3.453,6.634-3.557,3.7-6.251c-2.896-2.657,1.207-1.383,0.795-3.351c-0.41-1.968-3.516-5.71-0.116-7.211c3.398-1.5,1.824-5.916,3.418-6.565c1.592-0.65,2.396-3.63,0.645-4.706c-1.75-1.076-1.812-4.039-1.112-6.029l-4.255-39.065c-1.837-1.28-4.783-8.466-5.017-11.754l-32.462,3.009C416.868,151.622,419.429,149.964,419.619,153.295z"/>
 								<path id="usIN" fill="#5e0aad" stroke="#FFFFFF" vector-effect="non-scaling-stroke" d="M459.426,203.491c1.751,1.076,0.947,4.056-0.645,4.706c-1.594,0.65-0.02,5.065-3.418,6.565c-3.399,1.501-0.294,5.244,0.116,7.211c1.009-1.049,3.047-0.559,5.233-1.96c3.452-2.21,5.312,1.403,7.115-0.145c1.806-1.549,6.768,0.685,6.688-3.265c-0.082-3.951,7.253,0.345,6.846-3.434c-0.407-3.779,3.256-1.878,2.707-4.502c-0.547-2.623,2.822,1.096,2.396-3.671c-0.427-4.768,8.993-3.149,5.428-8.345l-6.142-42.69l-23.831,2.299c-2.406,3.013-6.022,3.417-7.86,2.136l4.255,39.065C457.614,199.452,457.676,202.415,459.426,203.491z"/>
@@ -139,7 +142,7 @@
 								<path id="usOH" fill="#5e0aad" stroke="#FFFFFF" vector-effect="non-scaling-stroke" d="M503.17,200.539c2.263-2.023,2.526,2.748,5.122,0.884c2.597-1.865,4.802,1.218,5.76-0.283c0.955-1.501,2.244-3.01,3.601-1.062c1.357,1.949,3.98,1.401,3.533,3.716c2.974,0.433,4.063-2.719,3.955-7.917c-0.105-5.197,5.409-1.167,4.977-6.264c-0.434-5.097,1.773-5.739,3.367-4.515c0.836,0.642,6.867-4.421,5.552-6.701c-1.908-3.313,0.812-4.298-0.134-6.584c-0.944-2.286,0.49-3.797-1.051-6.73c-1.544-2.932,2.135-2.191,2.135-2.191l-4.252-20.819c-1.791,1.024-12.79,10.8-15.423,10.854c-2.634,0.054-5.535,3.076-8.516,2.314c-2.979-0.762-10.576-1.76-10.605-3.241l-15.44,1.962l6.142,42.69C499.278,195.513,500.905,202.562,503.17,200.539z"/>
 							</g>
 
-							<g role="option" class="usmap-select usmap-south--hover" data-region="south" transform="translate(2 5)" aria-selected="false" aria-label="USA South">
+							<g role="option" class="usmap-select usmap-south--hover" data-region="South" transform="translate(2 5)" aria-selected="false" aria-label="USA South">
 								<path id="usAL" fill="#5e0aad" stroke="#FFFFFF" vector-effect="non-scaling-stroke" d="M475.588,329.631c2.587-0.299,33.014-4.257,33.014-4.257c-3.959-6.339-0.419-8.39-2.557-10.32c-2.14-1.934-2.246-7.117-0.183-8.89c2.063-1.771-1.293-2.814-0.095-4.612c1.198-1.795-3.933-5.063-3.933-5.063l-10.834-33.57c-10.154,1.251-21.048,2.528-30.796,3.624l0.178,50.309l3.731,23.471c5.793,1.449,2.419-2.518,3.776-4.522c0.89-1.312,3.8,0.5,2.685,2.416c-1.113,1.914,1.33,1.708,1.873,3.009c1.298,3.103,1.44-2.089,2.863-0.965c1.423,1.123,0.859-2.323,1.923-2.592c-0.517-1.128,0.321-2.394-1.565-4.085C473.781,331.891,473.001,329.932,475.588,329.631z"/>
 								<path id="usAR" fill="#5e0aad" stroke="#FFFFFF" vector-effect="non-scaling-stroke" d="M433.141,263.063c-1.278-2.197,2.439-0.438,1.572-3.737c-1.25-4.75,4.507-1.08,2.81-6.148c-1.096,0.185-5.896,1.397-7.292,0.396c-3.341-2.402,5-5.125,0.428-7.282c-21.38,1.287-56.831,3.163-56.831,3.163l2.873,15.751l0.605,29.628c3.042,3.798,4.941,0.023,5.968,1.854l0.166,8.148l38.489-2.269c-1.691-2.022,2.431-4.003-0.163-5.76c-2.592-1.757,1.136-4.059,0.097-6.507c-1.039-2.449,2.791-1.951,1.58-4.808c-1.21-2.856,2.944-1.707,2.796-4.998c-0.15-3.289,2.511-2.35,1.881-5.054c-0.633-2.705,4.295-3.471,3.26-6.413h0.002c-0.083,0.001-0.177,0.252-0.254,0.258c0.077-0.006,0.178,0.106,0.261,0.103C430.365,267.009,434.422,265.261,433.141,263.063z"/>
 								<path id="usDE" fill="#5e0aad" stroke="#FFFFFF" vector-effect="non-scaling-stroke" d="M 602.323 165.248 c -0.565 0.506 0.074 3.623 1.837 5.233 c 1.761 1.611 0.984 3.932 2.82 5.047 c 1.834 1.116 2.675 1.922 3.952 4.119 c 1.282 2.196 1.045 2.695 0.321 3.534 l -6.976 1.131 l -5.328 -18.994 c 0 0 -1.138 -3.765 4.424 -3.385 C 601.452 162.371 601.685 164.172 602.323 165.248 z z"/>
@@ -158,7 +161,7 @@
 								<path id="usMD" fill="#5e0aad" stroke="#FFFFFF" vector-effect="non-scaling-stroke" d="M 604.278 184.311 l 6.976 -1.131 c 1.182 1.375 -0.21 5.851 -0.679 7.095 l -1.885 0.45 c -0.428 -0.731 -4.175 1.155 -3.209 0.065 s -2.831 -1.506 -2.28 -2.752 c 0.552 -1.247 -3.753 1.722 -3.224 -0.594 s -3.063 -0.761 -1.781 -2.516 c 1.283 -1.755 2.376 -0.707 2.522 -1.534 c 0.147 -0.826 -3.059 -0.596 -3.254 -2.074 c -0.195 -1.478 -2.692 -2.909 -0.574 -3.94 c 2.12 -1.031 -2.394 -4.316 -0.839 -4.841 c 1.553 -0.525 3.307 -3.278 1.813 -3.906 c -1.495 -0.628 -2.501 1.967 -3.567 2.625 c -3.416 2.105 -2.763 5.901 -1.161 7.763 c 1.603 1.861 -0.696 2.155 0.659 3.938 c 1.352 1.784 0.81 3.359 3.14 4.712 c 2.333 1.352 -1.468 0.688 -2.64 -0.358 c -1.175 -1.047 -0.553 1.082 0.86 1.877 c 1.416 0.793 3.323 1.413 2.926 2.162 c -0.396 0.75 -2.21 0.621 -3.129 -0.018 c -0.918 -0.64 -4.925 -3.275 -6.051 -2.017 c -4.224 2.803 -5.858 -0.622 -1.905 -4.655 c 2.363 -2.413 -1.436 -5.735 -4.543 -4.683 c -3.106 1.051 0.334 -3.794 -5.51 -3.674 c -0.064 -2.968 -1.865 -2.598 -5.011 -3.521 c -3.149 -0.924 -4.057 3.047 -7.031 2.449 c -2.978 -0.597 0.549 2.788 -2.916 2.365 c -3.469 -0.423 -5.486 5.546 -5.486 5.546 l -1.838 -8.601 l 44.289 -9.227 L 604.278 184.311 z z"/>
 							</g>
 
-							<g role="option" class="usmap-select usmap-northeast--hover" data-region="northeast" transform="translate(5 -5)" aria-selected="false" aria-label="USA Northeast">
+							<g role="option" class="usmap-select usmap-northeast--hover" data-region="Northeast" transform="translate(5 -5)" aria-selected="false" aria-label="USA Northeast">
 								<path id="usCT" fill="#5e0aad" stroke="#FFFFFF" vector-effect="non-scaling-stroke" d="M 635.5 116.485 l 2.276 10.739 c -2.446 1.203 -5.01 0.597 -6.152 1.196 c -1.14 0.6 -0.366 2.148 -1.761 2.424 c -1.394 0.276 -9.834 6.294 -11.284 7.806 l -1.604 -1.861 l 1.938 -1.933 l -3.065 -13.359 C 620.265 120.419 635.5 116.485 635.5 116.485 z M 654 183.508 z"/>
 								<path id="usME" fill="#5e0aad" stroke="#FFFFFF" vector-effect="non-scaling-stroke" d="M671.416,52.927c0.089-3.707-3.988,2.223-5.11-4.259c-0.54-3.134-4.113,0.167-5.359-4.501c-1.248-4.667-7.7-18.203-10.782-19.952c-3.083-1.749-5.77,3.741-7.661,3.861c-1.89,0.121-3.109-3.065-3.938-3.295c-0.827-0.23-6.474,13.636-4.863,15.826c1.609,2.19,0.041,6.865-0.574,8.164c-1.422,2.992,3.178,2.405,1.075,4.341c-3.867,3.564-0.594,7.176-3.107,9.121c-1.586,1.227-1.481,0.031-2.761,1.868l10.318,29.432c0,0,3.317,1.249,4.099,3.21c0.448-2.232,1.256-15.094,4.424-13.183s-0.534-6,3.46-3.94c3.234,1.667,1.284-1.673,3.345-1.55c2.062,0.122,1.206-6.136,1.408-7.604c0.719-5.202,2.238,4.729,5.95-3.004c0.94-1.959,4.398,1.64,5.061-2.162c0.642-3.672,8.131-5.024,8.406-7.747C675.036,55.259,671.328,56.635,671.416,52.927z"/>
 								<path id="usMA" fill="#5e0aad" stroke="#FFFFFF" vector-effect="non-scaling-stroke" d="M 642.004 100.46 c 0.569 3.612 3.559 0.833 3.931 2.968 c 0.115 0.653 -4.077 1.977 -3.274 4.924 c 0.801 2.947 4.624 1.219 4.497 2.543 c -0.338 3.547 2.409 5.055 3.979 5.271 c 1.567 0.215 6.307 -1.611 5.294 -2.825 c -1.014 -1.215 0.872 -1.665 1.222 -0.684 c 0.347 0.981 0.723 3.196 -3.031 4.838 c -3.754 1.641 -3.635 3.45 -4.58 1.493 c -0.947 -1.957 -5.035 3.479 -5.575 1.103 c -0.544 -2.377 0.117 -2.226 -0.947 -1.875 c -1.062 0.352 -2.037 0.948 -2.567 -0.771 c -1.05 -3.024 -5.451 -0.959 -5.451 -0.959 s -15.235 3.934 -19.652 5.012 c 0 0 -0.365 -9.379 -0.243 -11.522 c 0 0 3.722 -0.903 8.036 -1.952 c 5.118 -1.244 11.073 -2.691 12.651 -3.082 C 640.168 103.215 639.123 100.437 642.004 100.46 z z"/>
@@ -171,7 +174,7 @@
 							</g>
 						</svg>
 
-						<input type="hidden" name="geography" id="geography" required>
+						<input class="form-control text-center" name="geography" id="geography" readonly required data-msg="Please select a region">
 
 						<hr>
 						
@@ -179,10 +182,11 @@
 						<h3 class="fs-subtitle">
 							What field of programming do you work most closely with?
 						</h3>
+						<label for="field" class="error text-danger"></label>	
 						
 						<div class="row py-1">
 							<div class="col">
-								<input type="radio" name="field" value="Ops" id="field1">
+								<input type="radio" name="field" value="Ops" id="field1" required data-msg="Please select a field">
 								<label for="field1">Ops</label>
 							</div>
 						</div>
@@ -224,11 +228,12 @@
 						</div>
 						<div class="row py-1">
 							<div class="col">
-								<input type="radio" name="field" value="NULL" id="field5">
+								<input type="radio" name="field" value="NULL" id="field8">
 								<label for="field5">I'd prefer not to answer</label>
 							</div>
 						</div>
 					</div> <!-- End tab over -->
+
 					<button type="button" class="btn btn-primary next mt-4" name="next" value="Next">Next</button>
 				</fieldset>
 
@@ -239,10 +244,11 @@
 						<h3 class="fs-subtitle">
 							Are you a student?
 						</h3>
+						<label for="student" class="error text-danger"></label>
 						
 						<div class="row py-1">
 							<div class="col">
-								<input type="radio" name="student" value="yes" id="student1">
+								<input type="radio" name="student" value="yes" id="student1" required data-msg="Please enter your student status">
 								<label for="student1">Yes</label>
 							</div>
 						</div>
@@ -260,10 +266,11 @@
 							<h3 class="fs-subtitle">
 								What program is your major a part of?
 							</h3>
+							<label for="program" class="error text-danger"></label>
 							
 							<div class="row py-1">
 								<div class="col">
-									<input type="radio" name="program" value="LibArts" id="program1" disabled>
+									<input type="radio" name="program" value="LibArts" id="program1" disabled data-msg="Please enter your major's department">
 									<label for="program1">Liberal Arts</label>
 								</div>
 							</div>
@@ -301,10 +308,11 @@
 							<h3 class="fs-subtitle pt-5">
 								Does your school offer a comp-sci-specific course on ethics?
 							</h3>
+							<label for="ethicsCourse" class="error text-danger"></label>
 	
 							<div class="row py-1">
 								<div class="col">
-									<input type="radio" name="ethicsCourse" value="yes" id="ethicsCourse1" disabled>
+									<input type="radio" name="ethicsCourse" value="yes" id="ethicsCourse1" disabled data-msg="Please answer whether your school has an ethics course">
 									<label for="ethicsCourse1">Yes</label>
 								</div>
 							</div>
@@ -320,9 +328,16 @@
 									<label for="ethicsCourse3">No</label>
 								</div>
 							</div>
+							<div class="row py-1">
+								<div class="col">
+									<input type="radio" name="ethicsCourse" value="NULL" id="ethicsCourse4" disabled>
+									<label for="ethicsCourse3">I'd prefer not to answer</label>
+								</div>
+							</div>
 						</div>
 
 					</div> <!-- End tab over -->
+
 					<button type="button" class="btn btn-primary previous mt-4" name="previous">Previous</button>
 					<button type="button" class="btn btn-primary next mt-4" name="next" value="Next">Next</button>
 				</fieldset>
@@ -345,9 +360,10 @@
 						a bad impression if distracted. What do you do?
 					</p>
 					
+					<label for="HCvTttC" class="error text-danger"></label>
 					<div class="row py-1">
 						<div class="col">
-							<input type="radio" name="HCvTttC" value="HCvTttC1" id="HCvTttC1">
+							<input type="radio" name="HCvTttC" value="HCvTttC1" id="HCvTttC1" required data-msg="Please select a response">
 							<label for="HCvTttC1">Relay the information to Joe before the meeting</label>
 						</div>
 					</div>
@@ -372,9 +388,10 @@
 						project deadline due to the cost of updating marketing. What do you do?
 					</p>
 					
+					<label for="HCvQA" class="error text-danger"></label>
 					<div class="row py-1">
 						<div class="col">
-							<input type="radio" name="HCvQA" value="HCvQA1" id="HCvQA1">
+							<input type="radio" name="HCvQA" value="HCvQA1" id="HCvQA1" required data-msg="Please select a response">
 							<label for="HCvQA1">Work long hours with the rest of your team to get the project done on time</label>
 						</div>
 					</div>
@@ -402,9 +419,10 @@
 						from their top competitor). What do you do?
 					</p>
 					
+					<label for="QAvRoIP" class="error text-danger"></label>
 					<div class="row py-1">
 						<div class="col">
-							<input type="radio" name="QAvRoIP" value="QAvRoIP1" id="QAvRoIP1">
+							<input type="radio" name="QAvRoIP" value="QAvRoIP1" id="QAvRoIP1" required data-msg="Please select a response">
 							<label for="QAvRoIP1">Finish the project in time with your friend’s help</label>
 						</div>
 					</div>
@@ -432,9 +450,10 @@
 						want this feature if at all possible. What do you do?
 					</p>
 					
+					<label for="QAvTttC" class="error text-danger"></label>
 					<div class="row py-1">
 						<div class="col">
-							<input type="radio" name="QAvTttC" value="QAvTttC1" id="QAvTttC1">
+							<input type="radio" name="QAvTttC" value="QAvTttC1" id="QAvTttC1" required data-msg="Please select a response">
 							<label for="QAvTttC1">Tell them that, yes, this feature can be made, even though it's unadvised</label>
 						</div>
 					</div>
@@ -461,9 +480,10 @@
 						and your team member stopped using it due to privacy concerns. What do you do?
 					</p>
 					
+					<label for="HCvPr" class="error text-danger"></label>
 					<div class="row py-1">
 						<div class="col">
-							<input type="radio" name="HCvPr" value="HCvPr1" id="HCvPr1">
+							<input type="radio" name="HCvPr" value="HCvPr1" id="HCvPr1" required data-msg="Please select a response">
 							<label for="HCvPr1">Encourage the team member to use the app for just a month and see if it helps</label>
 						</div>
 					</div>
@@ -491,9 +511,10 @@
 						allowed in the company’s privacy policy. What do you do?
 					</p>
 					
+					<label for="QAvPr" class="error text-danger"></label>
 					<div class="row py-1">
 						<div class="col">
-							<input type="radio" name="QAvPr" value="QAvPr1" id="QAvPr1">
+							<input type="radio" name="QAvPr" value="QAvPr1" id="QAvPr1" required data-msg="Please select a response">
 							<label for="QAvPr1">Begin development of the data collection software</label>
 						</div>
 					</div>
@@ -536,9 +557,10 @@
 						The course material is subject to copyright. What do you do?
 					</p>
 					
+					<label for="HCvIP" class="error text-danger"></label>
 					<div class="row py-1">
 						<div class="col">
-							<input type="radio" name="HCvIP" value="HCvIP1" id="HCvIP1">
+							<input type="radio" name="HCvIP" value="HCvIP1" id="HCvIP1" required data-msg="Please select a response">
 							<label for="HCvIP1">Download and copy the course material and give it to your mentee</label>
 						</div>
 					</div>
@@ -564,9 +586,10 @@
 						behind. What do you do?
 					</p>
 					
+					<label for="TttCvPr" class="error text-danger"></label>
 					<div class="row py-1">
 						<div class="col">
-							<input type="radio" name="TttCvPr" value="TttCvPr1" id="TttCvPr1">
+							<input type="radio" name="TttCvPr" value="TttCvPr1" id="TttCvPr1" required data-msg="Please select a response">
 							<label for="TttCvPr1">Explain the situation to your team lead</label>
 						</div>
 					</div>
@@ -592,9 +615,10 @@
 						maintainer, with no response. What do you do?
 					</p>
 					
+					<label for="IPvPr" class="error text-danger"></label>
 					<div class="row py-1">
 						<div class="col">
-							<input type="radio" name="IPvPr" value="IPvPr1" id="IPvPr1">
+							<input type="radio" name="IPvPr" value="IPvPr1" id="IPvPr1" required data-msg="Please select a response">
 							<label for="IPvPr1">Edit the library to protect privacy, but breach the license</label>
 						</div>
 					</div>
@@ -623,17 +647,18 @@
 				<fieldset class="col">
 					<h2 class="fs-title">Question 10</h2>
 					<p class="fs-subtitle">
-						The company is currently negotiating with a customer who is claiming he was
-						injured by one of the company's products and has threatened legal action. The
-						company has spent several months convincing the customer they are not at fault,
-						and working on a compromise. When your development duties take you to a part of
+						For the past three months, your company has been negotiating with a customer
+						who is claiming he was injured by one of the company's products. The company
+						has spent several months convincing the customer they are not at fault, and
+						working on a compromise. When your development duties take you to a part of
 						your company’s code that has not been looked at in years, you find a corner case
 						that might support the customer’s personal injury claim. What do you do?
 					</p>
 					
+					<label for="TttCvIP" class="error text-danger"></label>
 					<div class="row py-1">
 						<div class="col">
-							<input type="radio" name="TttCvIP" value="TttCvIP1" id="TttCvIP1">
+							<input type="radio" name="TttCvIP" value="TttCvIP1" id="TttCvIP1" required data-msg="Please select a response">
 							<label for="TttCvIP1">Give/Sell the information to the customer</label>
 						</div>
 					</div>
@@ -659,9 +684,80 @@
 
 <%- include('includes/footer.ejs') %>
 
-<!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <!-- jQuery easing plugin -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 <!-- User-defined functions -->
-<script src="/javascripts/surveyMultipart.js"></script>
+<script>
+	$(document).ready(function() {
+		if($("input[name='student']:checked").val() == "yes") {
+			$("#studentQuestions *").prop("disabled", false)
+			$("#studentQuestions *").prop("required", true)
+		} else {
+			$("#studentQuestions *").prop("disabled", true)
+			$("#studentQuestions *").prop("required", false)
+		}
+	});
+
+	var validator = $('#msform').validate();
+
+	$(".usmap-select").on("click", function() {
+		$(".usmap-select").removeAttr('selected')
+		$(this).attr('selected', 'selected')
+		// Aria label
+		$(".usmap-select").attr('aria-selected', 'false') // Set all selectable elements to false
+		$(this).attr('aria-selected', 'true') // Set newly selected element to true
+		// Set input value
+		$("#geography").val($(this).data('region'))
+		validator.element( "#geography" );
+	})
+
+	$("input[name='student']").on("change", function(){
+		if(this.value == "yes") {
+			$("#studentQuestions *").prop("disabled", false)
+			$("#studentQuestions *").prop("required", true)
+		} else {
+			$("#studentQuestions *").prop("disabled", true)
+			$("#studentQuestions *").prop("required", false)
+		}
+	});
+	
+	// Code edited from Orginal Page: http://thecodeplayer.com/walkthrough/jquery-multi-step-form-with-progress-bar 
+	var current_fs, next_fs, previous_fs; //fieldsets
+	var left, opacity, scale; //fieldset properties which we will animate
+
+	$(".next").on("click", function(){
+		var form_page = $(this).parents("fieldset");
+
+	    var valid = true;
+		$('input', form_page).each(function(i, v){
+			valid = validator.element(v) && valid;
+		});
+		
+		if(!valid){
+			return;
+		}
+
+		// Move forward
+		current_fs = $(this).parents("fieldset");
+		next_fs = $(this).parents("fieldset").next();
+		
+		//activate next step on progressbar using the index of next_fs
+		$("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+		
+		//show the next fieldset
+		next_fs.show(); 
+		current_fs.hide();
+	});
+
+	$(".previous").on("click", function(){
+		current_fs = $(this).parents("fieldset");
+		previous_fs = $(this).parents("fieldset").prev();
+		
+		//de-activate current step on progressbar
+		$("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
+		
+		//show the previous fieldset
+		previous_fs.show(); 
+		current_fs.hide();
+	});
+</script>

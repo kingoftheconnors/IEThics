@@ -1,8 +1,4 @@
-Create identify-yourself sections (every question should have a prefer-not-to-answer option)
-   Geography (Create map for choosing place of residence(?) [choose how geography is categorically divided])
-
 Clean up survey (to be pretty on all screen sizes)
-Make survey not able to move forward with un-answered questions
 Database
 Create POST submission endpoint adding to database
 Make Survey-completion page complete with results
