@@ -174,6 +174,13 @@
 							</g>
 						</svg>
 
+						<div class="row py-1">
+							<div class="col">
+								<input type="radio" value="NULL" id="usmap-NULL" data-region="I'd prefer not to answer">
+								<label for="usmap-NULL">I'd prefer not to answer</label>
+							</div>
+						</div>
+
 						<input class="form-control text-center" name="geography" id="geography" readonly required data-msg="Please select a region">
 
 						<hr>
@@ -229,7 +236,7 @@
 						<div class="row py-1">
 							<div class="col">
 								<input type="radio" name="field" value="NULL" id="field8">
-								<label for="field5">I'd prefer not to answer</label>
+								<label for="field8">I'd prefer not to answer</label>
 							</div>
 						</div>
 					</div> <!-- End tab over -->
@@ -331,7 +338,7 @@
 							<div class="row py-1">
 								<div class="col">
 									<input type="radio" name="ethicsCourse" value="NULL" id="ethicsCourse4" disabled>
-									<label for="ethicsCourse3">I'd prefer not to answer</label>
+									<label for="ethicsCourse4">I'd prefer not to answer</label>
 								</div>
 							</div>
 						</div>
@@ -700,11 +707,14 @@
 
 	var validator = $('#msform').validate();
 
-	$(".usmap-select").on("click", function() {
-		$(".usmap-select").removeAttr('selected')
+	$(".usmap-select, #usmap-NULL").on("click", function() {
+		$(".usmap-select, #usmap-NULL").removeAttr('selected')
+		if(!$("#usmap-NULL").is(this)) {
+			$("#usmap-NULL").prop('checked', false)
+		}
 		$(this).attr('selected', 'selected')
 		// Aria label
-		$(".usmap-select").attr('aria-selected', 'false') // Set all selectable elements to false
+		$(".usmap-select, #usmap-NULL").attr('aria-selected', 'false') // Set all selectable elements to false
 		$(this).attr('aria-selected', 'true') // Set newly selected element to true
 		// Set input value
 		$("#geography").val($(this).data('region'))
