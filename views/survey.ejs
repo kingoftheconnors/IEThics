@@ -3,7 +3,7 @@
 <!-- multistep form -->
 <div class="row justify-content-around no-margin">
 	<div class="col-6-md col-10">
-		<form id="msform">
+		<form id="msform" action="/survey/submitForm" method="POST">
 			<div class="row justify-content-around mb-3">
 				<!-- progressbar -->
 				<ul id="progressbar">
@@ -182,7 +182,7 @@
 						</div>
 
 						<input type="hidden" name="geography" id="geography">
-						<input class="form-control text-center" name="geography_label" id="geography_label" readonly required data-msg="Please select a region">
+						<input class="form-control text-center" id="geography_label" readonly required data-msg="Please select a region">
 
 						<hr>
 						
@@ -427,17 +427,17 @@
 						from their top competitor). What do you do?
 					</p>
 					
-					<label for="QAvRoIP" class="error text-danger"></label>
+					<label for="QAvIP" class="error text-danger"></label>
 					<div class="row py-1">
 						<div class="col">
-							<input type="radio" name="QAvRoIP" value="1" id="QAvRoIP1" required data-msg="Please select a response">
-							<label for="QAvRoIP1">Finish the project in time with your friend’s help</label>
+							<input type="radio" name="QAvIP" value="1" id="QAvIP1" required data-msg="Please select a response">
+							<label for="QAvIP1">Finish the project in time with your friend’s help</label>
 						</div>
 					</div>
 					<div class="row py-1">
 						<div class="col">
-							<input type="radio" name="QAvRoIP" value="2" id="QAvRoIP2">
-							<label for="QAvRoIP2">Honor your contract and politely refuse</label>
+							<input type="radio" name="QAvIP" value="2" id="QAvIP2">
+							<label for="QAvIP2">Honor your contract and politely refuse</label>
 						</div>
 					</div>
 					<button type="button" class="btn btn-primary previous mt-4" name="previous">Previous</button>

@@ -7,18 +7,18 @@ router.get('/', function(req, res, next) {
   res.render('survey');
 });
 
-/*
 // POST survey data to database
-router.post('/', function(req,res) {
+router.post('/submitForm', function(req,res) {
   // Get data from request
-  var calendarInput = JSON.parse(req.body.calendarData);
-  var calendarName = req.body.calendarName;
-
+  var responseInfo = Object.keys(req.body).reduce(function (filtered, key) {
+    if (req.body[key] != '0' && req.body[key] != '') filtered[key] = req.body[key];
+    return filtered;
+  }, {});
   // Save data in database
-  dataTier.saveCalendar(calendarInput, calendarName, function(calendarID) {
+  dataTier.saveResponse(responseInfo, function(calendarID) {
       res.redirect('/');
   });
   
-});*/
+});
 
 module.exports = router;
