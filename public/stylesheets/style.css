@@ -173,5 +173,13 @@ input:disabled+label {
 
 /* Content types can be seen here: https://astronautweb.co/snippet/font-awesome/ */
 ul.icon li.chart:before { content: '\f200'; }
-ul.icon li.person:before { content: '\f1ae'; }
+ul.icon li.person:before { content:"\f21d"; }
 ul.icon li.brain:before { content: '\f19d'; }
+
+.value-label {
+	font: 20px;
+	fill: black;
+    stroke: white;
+    font-weight: 800;
+    stroke-width: 0.75px;
+}

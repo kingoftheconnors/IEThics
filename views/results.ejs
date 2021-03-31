@@ -1,0 +1,51 @@
+<%- include('includes/header.ejs') %>
+
+    <div class="jumbotron jumbotron-fluid bg-primary text-light">
+        <div class="container text-center">
+            <div class="jumbotron-header--width pt-5 pb-4 bg-primary m-auto shadow-lg">
+                <h1 class="display-2">Thank you!</h1>
+                <p>Now for the fun part</p>
+            </div>
+        </div>
+    </div>
+    <div class="container text-dark">
+        <h2 class="text-center py-2">Here's what your responses say about you!</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-9 col-sm-10 col-12">
+                <!-- TODO: SVG between CIRCLES of each VALUES with arrows in between for relations. Each arrow is a separate, hoverable element with a tooltip for its meaning, but should also be tabbable and have accessibilty values -->
+                <% locals.valuePositions = [[65,125,'#F00'], [145,285,'#F0F'], [305,285,'#0FF'], [385,125,'#0F0'], [225,5,'#FF0']] %>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 330" xml:space="preserve">
+                    <!-- Define arrowhead for lines -->
+                    <defs>
+                      <marker id="arrowhead" markerWidth="4" markerHeight="6" refX="6" refY="2" orient="auto">
+                        <polygon points="0 .5, 6 2, 0 3.5" />
+                      </marker>
+                    </defs>
+
+                    <!-- Each relation will be its own line -->
+                    <% for (var i = 0; i < relations.length; i++) { %>
+                        <% locals.fromIndex = values.findIndex((value) => value.specifier.toUpperCase() == relations[i].from.toUpperCase()) %>
+                        <% locals.toIndex = values.findIndex((value) => value.specifier.toUpperCase() == relations[i].to.toUpperCase()) %>
+                        <line stroke-width="4" stroke="#000" x1="<%= locals.valuePositions[fromIndex][0] %>" y1="<%= locals.valuePositions[fromIndex][1] %>" x2="<%= locals.valuePositions[toIndex][0] %>" y2="<%= locals.valuePositions[toIndex][1] %>" marker-end="url(#arrowhead)" />
+                        <line stroke-width="3.5" stroke="<%= locals.valuePositions[fromIndex][2] %>" x1="<%= locals.valuePositions[fromIndex][0] %>" y1="<%= locals.valuePositions[fromIndex][1] %>" x2="<%= locals.valuePositions[toIndex][0] %>" y2="<%= locals.valuePositions[toIndex][1] %>" marker-end="url(#arrowhead)" />
+                    <% } %>
+
+                    <% for (var i = 0; i < values.length; i++) { %>
+                        <!-- Each value point-and-label will be grouped as a g tag -->
+                        <g class="value">
+                            <text x="<%= locals.valuePositions[i][0] %>" y="<%= locals.valuePositions[i][1] + 15 %>" class="value-label" text-anchor="middle"><%= values[i].name %></text>
+                            <circle class="plain" fill="<%= locals.valuePositions[i][2] %>" cx="<%= locals.valuePositions[i][0] %>" cy="<%= locals.valuePositions[i][1] %>" r="4"></circle>
+                        </g>
+                    <% } %>
+                </svg>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-7 col-md-8 col-sm-9 col-10 pb-4">
+                <p class="text-center">Your anonymous submission is a vital piece of the computing sector's values. With enough responses, we can find a complete snapshot of programmers' values and ethics. Would you like to see what we've found?</p>
+                <a href="/data" class="btn btn-primary btn-color--pink form-control shadow-lg" role="button">See the Statistics!</a>
+            </div>
+        </div>
+    </div>
+
+<%- include('includes/footer.ejs') %>
